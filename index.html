@@ -825,8 +825,8 @@ body.fullscreen-active main { padding-top: 0; }
   updateDisplay(remaining, false);
   document.querySelector('.preset-button[data-seconds="300"]')?.classList.add('active');
 })();
-
-// Registro del Service Worker (offline)
+</script>
+<script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
     .then((reg) => console.log('SW registrado:', reg.scope))
